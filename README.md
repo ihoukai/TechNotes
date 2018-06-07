@@ -1,5 +1,5 @@
 # TechNotes
 ## 技术书籍笔记
 ## c/c++
-[Effective C++](./C-C++/Effective C++/Effective C++.md)
-[More Effective C++](./C-C++/More Effective C++/More Effective C++.md)
+[Effective C++](C-C++/Effective%20C++/Effective%20C++.md)
+[More Effective C++](C-C++/More%20Effective%20C++/More%20Effective%20C++.md)
