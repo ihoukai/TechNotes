@@ -173,15 +173,18 @@ days = {"Sunday", "Monday"}   --> 等价于days={};days[1]="Sunday";days[2]="Mon
 a = {x=10, y=20}              --> 等价于 a={}; a.x=10; a.y=20
 ```
 - 对于某些情况如果真的需要以0作为一个数组的起始索引的话，通过这种语法也可以轻松做到：
-  ```lua
-    days = {[0]="Sunday", "Monday", "Tuesday", "Wednesday"}
-  ```
-    **不推荐在lua中以0作为数组的起始索引。大多数内键函数都假设数组起始于索引1**
+
+```lua
+  days = {[0]="Sunday", "Monday", "Tuesday", "Wednesday"}
+```
+
+**不推荐在lua中以0作为数组的起始索引。大多数内键函数都假设数组起始于索引1**
 
 - 最后，在一个构造式中还可以用分号代替逗号。通常会将分号用于分隔构造式中不同的成分，例如将列表部分与记录部分明显地区分开：
-  ```lua
-    {x=10, y=45; "one", "two", "three"}
-  ```
+
+```lua
+  {x=10, y=45; "one", "two", "three"}
+```
 
 ### 第4章 语句
 
@@ -784,7 +787,7 @@ function Account:withdraw(self, v)
 	self.balance = self.balance - v
 end
 ~~~
-a.withdraw(a, 100)
+a.withdraw(a, 100) 
 a:withdraw(100)
 
 #### 16.1 类
@@ -844,6 +847,7 @@ for k, v in pairs(a) do print(v) end
   | func            | 函数本身                         |
 
 - getinfo函数的效率不高。为了得到更好的性能，getinfo有第二个可选参数，用于指定希望获取哪些信息。这个参数是一个字符串，其中美国字母代码一组字段，这些字母有：
+
   | 字母   | 获取哪些信息                                   |
   | ---- | ---------------------------------------- |
   | 'n'  | 选择name和namewhat                          |
